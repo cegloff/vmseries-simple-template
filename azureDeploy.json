@@ -4,12 +4,14 @@
     "parameters": {
         "location": {
             "type": "string",
+            "defaultValue" : "West US",
             "metadata": {
                 "description": "region of resources"
             }
         },
         "newStorageAccount": {
             "type": "string",
+            "defaultValue" : "netsourcestorage",
             "metadata": {
                 "description": "Globally unique lowercase name of your storage account"
             }
@@ -41,25 +43,28 @@
         },
         "dnsNameForPublicIP": {
             "type": "string",
+            "defaultValue" : "netsourcepalo",
             "metadata": {
                 "description": "Globally unique DNS name to access management interface of VM-Series firewall"
             }
         },
         "vmName": {
             "type": "string",
+            "defaultValue" : "netsourcepalo",
             "metadata": {
                 "description": "Name of VM-Series VM in the Azure portal"
             }
         },
         "adminUserName": {
             "type": "string",
+            "defaultValue" : "adminuser",
             "metadata": {
                 "description": "Username for VM-Series administrator"
             }
         },
         "adminPassword": {
             "type": "securestring",
-	    "defaultValue": "Pal0Alt0!29",
+	    "defaultValue": "Pal0Alt0!2999",
             "metadata": {
                 "description": "Password for VM-Series administrator"
             }
@@ -84,6 +89,7 @@
         },
         "vmSize": {
             "type": "string",
+            "defaultValue" : "Standard_D3",
             "allowedValues": [
                 "Standard_D3",
                 "Standard_D4"
@@ -94,6 +100,7 @@
         },
         "srcIPInboundNSG": {
             "type": "string",
+            "defaultValue" : "0.0.0.0/0",
             "metadata": {
                 "description": "Your source public IP address. Added to the inbound DefaultNSG on eth0 (MGMT)"
             }
@@ -103,7 +110,7 @@
 		"metadata": {
 			"artifactsBaseUrl": ""
 		},
-		"defaultValue": "https://raw.githubusercontent.com/saurabhtrekker/UI1/master"
+		"defaultValue": "https://raw.githubusercontent.com/cegloff/vmseries-simple-template/master"
 	},
     "virtualNetworkName": {
       "type": "string",
@@ -163,21 +170,21 @@
     },
     "subnet0StartAddress": {
       "type": "string",
-      "defaultValue": "172.31.11.195",
+      "defaultValue": "172.31.11.198",
       "metadata": {
         "description": "Mgmt subnet start address"
       }
     },
     "subnet1StartAddress": {
       "type": "string",
-      "defaultValue": "172.31.11.35",
+      "defaultValue": "172.31.11.38",
       "metadata": {
         "description": "Untrust subnet start address"
       }
     },
     "subnet2StartAddress": {
       "type": "string",
-      "defaultValue": "172.31.11.227",
+      "defaultValue": "172.31.11.230",
       "metadata": {
         "description": "Trust subnet start address"
       }
