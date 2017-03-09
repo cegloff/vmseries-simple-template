@@ -431,8 +431,8 @@
           "uri": "[variables('vmTemplateUrl')]",
           "contentVersion": "1.0.0.0"
         },
-		"availabilitySet": {
-          "value": "[parameters ('availabilitySetName')]"
+		"availabilitySetName": {
+            "value": "[variables('availabilitySetName')]"
         },
         "parameters": {
           "location": {
