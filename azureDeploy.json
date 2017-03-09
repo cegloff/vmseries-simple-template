@@ -98,6 +98,13 @@
                 "description": "Azure VM size for VM-Series"
             }
         },
+		"availabilitySetName": {
+            "type": "string",
+            "defaultValue" : "myAvSet",
+            "metadata": {
+                "description": "Name to use for the palo Availability Set"
+            }
+        },
         "srcIPInboundNSG": {
             "type": "string",
             "defaultValue" : "0.0.0.0/0",
