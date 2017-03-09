@@ -8,7 +8,7 @@ This ARM template deploys a VM-Series next generation firewall VM in an Azure re
 
 This template is meant to let you do customized deployments of VM-Series instead of deploying from the Azure Marketplace. You can deploy using the "Deploy to Azure" button below or download the template and customize it to your needs. You can also fork the templates into your own GitHub repository.
 
-[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FPaloAltoNetworks%2Fazure%2Fmaster%2Fvmseries-simple-template%2FazureDeploy.json)
+[<img src="http://azuredeploy.net/deploybutton.png"/>](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fcegloff%2Fvmseries-simple-template%2Fmaster%2FazureDeploy.json)
 [<img src="https://camo.githubusercontent.com/536ab4f9bc823c2e0ce72fb610aafda57d8c6c12/687474703a2f2f61726d76697a2e696f2f76697375616c697a65627574746f6e2e706e67" data-canonical-src="http://armviz.io/visualizebutton.png" style="max-width:100%;">](http://armviz.io/#/?load=https%3A%2F%2Fraw.githubusercontent.com%2FPaloAltoNetworks%2Fazure%2Fmaster%2Fvmseries-simple-template%2FazureDeploy.json)
 
 
@@ -39,4 +39,15 @@ If you are creating customized ARM templates you can use the following informati
 - Publisher name: paloaltonetworks
 - Offer: vmseries1
 - SKU: byol or bundle1 or bundle2
-- Version: 7.1.0 or latest (recommended)
+- Version: 8.0.0 or latest (recommended)
+
+
+To-Do
+Create or Select AS
+Availability Set (add two PANs to AS)
+
+[10:54]  
+ILB for F5 external
+
+[10:54]  
+Add F5’s to second AS
